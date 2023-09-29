@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { 
-    signInWithGooglePopup, 
-    createUserDocumentFromAuth,
+    signInWithGooglePopup,
     signInUserWithEmailAndPassword,
 } from '../../utils/firebase/firebase.utils';
 
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
 import './sign-in-form.style.scss'
+
 
 const defaultFormFields = {
     email:'',
@@ -21,26 +21,24 @@ const SignInForm = () =>{
     const resetFormFields = () => {
         setFormFields(defaultFormFields);
     }
-
+    
+    const signInWithGoogle = async () => {
+        await signInWithGooglePopup();
+    }
+    
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         try {
-            const response = await signInUserWithEmailAndPassword(email, password);
-
-            console.log(response);
-            
+            await signInUserWithEmailAndPassword(email, password);
             resetFormFields();
-
         } catch (error) {
-
             switch (error.code) {
                 case 'auth/invalid-login-credentials': 
                     alert('incorrect password or email');
                     break;
                 default : alert(error);
             }
-            console.log(error);
         }
 
     }
@@ -50,10 +48,6 @@ const SignInForm = () =>{
         setFormFields({...formFields, [name]: value})
     }
 
-    const signInWithGoogleUser = async () => {
-        const {user} = await signInWithGooglePopup();
-        const userDocRef = await  createUserDocumentFromAuth(user);
-    }
 
     return (
         <div className="sign-in-container">
@@ -83,7 +77,7 @@ const SignInForm = () =>{
                         Sign In
                     </Button>
 
-                    <Button type='button' buttonType='google' onClick={signInWithGoogleUser}>
+                    <Button type='button' buttonType='google' onClick={signInWithGoogle}>
                         Google Sign In
                     </Button>
                 </div>
