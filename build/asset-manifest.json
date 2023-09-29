@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-crwn/static/css/main.a6fd6b86.css",
-    "main.js": "/react-crwn/static/js/main.0bfebd73.js",
+    "main.css": "/react-crwn/static/css/main.c79d0ec3.css",
+    "main.js": "/react-crwn/static/js/main.aad3414d.js",
     "static/js/787.75ace299.chunk.js": "/react-crwn/static/js/787.75ace299.chunk.js",
     "static/media/crown.svg": "/react-crwn/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
     "index.html": "/react-crwn/index.html",
-    "main.a6fd6b86.css.map": "/react-crwn/static/css/main.a6fd6b86.css.map",
-    "main.0bfebd73.js.map": "/react-crwn/static/js/main.0bfebd73.js.map",
+    "main.c79d0ec3.css.map": "/react-crwn/static/css/main.c79d0ec3.css.map",
+    "main.aad3414d.js.map": "/react-crwn/static/js/main.aad3414d.js.map",
     "787.75ace299.chunk.js.map": "/react-crwn/static/js/787.75ace299.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6fd6b86.css",
-    "static/js/main.0bfebd73.js"
+    "static/css/main.c79d0ec3.css",
+    "static/js/main.aad3414d.js"
   ]
 }
