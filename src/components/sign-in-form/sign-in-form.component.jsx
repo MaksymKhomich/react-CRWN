@@ -40,14 +40,12 @@ const SignInForm = () =>{
                 default : alert(error);
             }
         }
-
     }
 
     const handleChange = (event) => {
         const {name, value} = event.target;
         setFormFields({...formFields, [name]: value})
     }
-
 
     return (
         <div className="sign-in-container">
@@ -77,8 +75,11 @@ const SignInForm = () =>{
                         Sign In
                     </Button>
 
-                    <Button type='button' buttonType='google' onClick={signInWithGoogle}>
-                        Google Sign In
+                    <Button 
+                        type='button' 
+                        buttonType='google' 
+                        onClick={signInWithGoogle}>
+                            Google Sign In
                     </Button>
                 </div>
 
