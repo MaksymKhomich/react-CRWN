@@ -23,7 +23,7 @@ const SignInForm = () =>{
     }
     
     const signInWithGoogle = async () => {
-        await signInWithGooglePopup();
+        await signInWithGoogle();
     }
     
     const handleSubmit = async (event) => {
@@ -35,9 +35,11 @@ const SignInForm = () =>{
         } catch (error) {
             switch (error.code) {
                 case 'auth/invalid-login-credentials': 
-                    alert('incorrect password or email');
+                    alert('Incorrect password or email');
+                    resetFormFields();
                     break;
-                default : alert(error);
+                default : 
+                    alert(error);
             }
         }
     }
