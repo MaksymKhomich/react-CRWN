@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-crwn/static/css/main.c79d0ec3.css",
-    "main.js": "/react-crwn/static/js/main.38364641.js",
+    "main.css": "/react-crwn/static/css/main.7f4b4d88.css",
+    "main.js": "/react-crwn/static/js/main.9482b073.js",
     "static/js/787.75ace299.chunk.js": "/react-crwn/static/js/787.75ace299.chunk.js",
+    "static/media/shopping-bag.svg": "/react-crwn/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
     "static/media/crown.svg": "/react-crwn/static/media/crown.3a4e2b15908e7a4c25343677d232b7e6.svg",
     "index.html": "/react-crwn/index.html",
-    "main.c79d0ec3.css.map": "/react-crwn/static/css/main.c79d0ec3.css.map",
-    "main.38364641.js.map": "/react-crwn/static/js/main.38364641.js.map",
+    "main.7f4b4d88.css.map": "/react-crwn/static/css/main.7f4b4d88.css.map",
+    "main.9482b073.js.map": "/react-crwn/static/js/main.9482b073.js.map",
     "787.75ace299.chunk.js.map": "/react-crwn/static/js/787.75ace299.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c79d0ec3.css",
-    "static/js/main.38364641.js"
+    "static/css/main.7f4b4d88.css",
+    "static/js/main.9482b073.js"
   ]
 }
